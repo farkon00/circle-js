@@ -97,4 +97,4 @@ sslider.addEventListener("change", function (e) { return renderSphere(Number(ssl
 renderBorder(50);
 renderFill(50);
 renderFBorder(50);
-renderSphere(5);
+renderSphere(9);

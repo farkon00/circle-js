@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Circle-js</title>
 </head>
 <body>
-    <h1>Border</h1>
-    <input type="range" id="radius_border" min="10" max="95" value="50">
-    <canvas id="circle_border" width="200" height="200"></canvas><br>
-
-    <h1>Fill</h1>
-    <input type="range" id="radius_fill" min="10" max="95" value="50">
-    <canvas id="circle_fill" width="200" height="200"></canvas><br>
-
-    <h1>Fast border</h1>
-    <input type="range" id="radius_fborder" min="10" max="95" value="50">
-    <canvas id="circle_fborder" width="200" height="200"></canvas><br>
-
-    <h1>Sphere</h1>
-    <input type="range" id="radius_sphere" min="3" max="10" value="5">
-    <canvas id="circle_sphere" width="200" height="200"></canvas><br>
-
-    <canvas id="test" width="400" height="400"></canvas><br>
+    <h1 id="title">Circle-js</h1>
+    <h3>By farkon00</h3>
+    <div id="main">
+        <h1 class="category">Sphere</h1>
+        <canvas id="circle_sphere" width="200" height="200"></canvas><br>
+        <input type="range" id="radius_sphere" min="3" max="10" value="9">
+    
+        <h1 class="category">Fast border</h1>
+        <canvas id="circle_fborder" width="200" height="200"></canvas><br>
+        <input type="range" id="radius_fborder" min="10" max="95" value="50">
+    
+        <h1 class="category">Fill</h1>
+        <canvas id="circle_fill" width="200" height="200"></canvas><br>
+        <input type="range" id="radius_fill" min="10" max="95" value="50">
+    
+        <h1 class="category">Border</h1>
+        <canvas id="circle_border" width="200" height="200"></canvas><br>    
+        <input type="range" id="radius_border" min="10" max="95" value="50">
+    </div>
 
     <script src="index.js"></script>
 </body>

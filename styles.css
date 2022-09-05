@@ -1,0 +1,19 @@
+body {
+    background-color: #181818;
+    padding: 0 15vw;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+#main {
+    padding: 3vh 0;
+    background-color: #262626;
+}
+
+#title {
+    font-size: 50px;
+}
+
+.category {
+    font-size: 34px;
+}
