@@ -52,11 +52,14 @@ function renderFBorder(r) {
 }
 function getSphereDots(r) {
     var res = [];
+    var rad = Math.pow(r, 2);
     for (var x = 0; x < r; x++)
-        for (var y = 0; y < r; y++) {
-            var z = Math.sqrt(Math.pow(r, 2) - Math.pow(x, 2) - Math.pow(y, 2));
-            res.push([x, y, z], [x, y, -z]);
-        }
+        for (var y = 0; y < r; y++)
+            for (var z = 0; z < r; z++) {
+                var d = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
+                if (r - 1 <= d && r + 1 > d)
+                    res.push([x, y, z], [x, y, -z]);
+            }
     return res;
 }
 function draw3DPoints(dots) {

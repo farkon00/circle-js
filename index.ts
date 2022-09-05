@@ -63,11 +63,15 @@ function renderFBorder(r: number) {
 
 function getSphereDots(r: number): Array<Array<number>> {
     let res: Array<Array<number>> = []
+    let rad = r ** 2
     for (let x = 0; x < r;x++)
-        for (let y = 0; y < r;y++) {
-            let z = Math.sqrt(r**2 - x**2 - y**2)
-            res.push([x, y, z], [x, y, -z])
-        }
+        for (let y = 0; y < r;y++)
+            for (let z = 0; z < r;z++) {
+                let d = Math.sqrt(x ** 2 + y ** 2 + z ** 2)
+                if (r - 1 <= d && r + 1 > d) 
+                    res.push([x, y, z], [x, y, -z])
+            }
+    
     return res
 }
 
