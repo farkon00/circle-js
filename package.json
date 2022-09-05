@@ -1,12 +1,12 @@
 {
   "name": "circle",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my project for experementing with rendering in 2d and 3d",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "farkon00",
   "license": "MIT",
   "dependencies": {
     "typescript": "^4.8.2"
